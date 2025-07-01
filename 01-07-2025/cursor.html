@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+       background-color: aqua;
+            height: 300px;
+            width: 300px;;
+        }
+    </style>
+</head>
+<body>
+     <div id="container"></div>
+     <p id="output"></p>
+    <script>
+        document.getElementById('container').addEventListener('mousemove', function (event) {
+            const x = event.clientX;
+            const y = event.clientY;
+            const output = document.getElementById("output");
+            output.textContent = `X: ${x}, y: ${y}`;
+        });
+    </script>
+</body>
+</html>
