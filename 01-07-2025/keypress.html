@@ -8,22 +8,19 @@
         #container{
        background-color: aqua;
             height: 300px;
-            width: 300px;;
+            width: 300px;
         }
     </style>
 </head>
 <body>
      <div id="container"></div>
-     <p id="output"></p>
+     Hello World
+     <p id="output">Hello World</p>
     <script>
-        document.body.addEventListener("keyup", function(event){
-            document.body.style.backgroundColor = "red";
+        document.body.addEventListener('keypress', function (event) {
+            document.body.style.backgroundColor = 'green';
+            document.body.style.color = "white";
         });
-        document.body.addEventListener("keydown", function(event){
-            document.body.style.backgroundColor = "green";
-        });
-        
-        
     </script>
 </body>
 </html>
