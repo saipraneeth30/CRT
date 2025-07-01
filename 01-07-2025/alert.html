@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="text" id="name" placeholder="Enter your name..."><br>
+    <input type="text" id="age" placeholder="Enter your age..."><br>
+     <input type="text" id="email" placeholder="Enter your email..."><br>
+    <input type="submit" id="submit" value="Submit">
+    <div id="output"></div>
+    <script>
+        document.getElementById('submit').addEventListener('click', function () {
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const email = document.getElementById('email').value;
+            document.getElementById('output').innerHTML = `
+            <p>Name: ${name}</p>
+            <p>age: ${age}</p>
+            <p>Email: ${email}</p>
+            `;
+        });
+    </script>
+</body>
+</html>

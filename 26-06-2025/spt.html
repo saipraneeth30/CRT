@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPT</title>
+</head>
+<body>
+    <div id="greeting-container">
+        <h1 id="marking">Greeting Application</h1>
+        <p>Enter your name below:</p>
+    <p id="greeting">Hi there!</p>
+    </div>
+    <input type="text" id="input1" placeholder="Enter a number">
+    <button id="sparkleBtn" onclick="f()">Greeting</button>
+    <script>
+        function f() {
+            const name = document.getElementById("input1").value;
+            document.title = `Greeting for ${name}`;
+            document.getElementById("greeting").textContent = `Hello, ${name}!`;
+            document.getElementById("marking").textContent = `Greeting Application for ${name}`;
+            const newHeading = document.createElement("h2");
+            newHeading.textContent = `Welcome, ${name}!`;
+            document.body.appendChild(newHeading);
+        }
+        
+    </script>
+</html> 
+ 

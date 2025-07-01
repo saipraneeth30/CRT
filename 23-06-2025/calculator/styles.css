@@ -1,0 +1,27 @@
+.buttons {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
+    color: #fcf9f9;
+    gap: 10px;
+    padding: 10px;
+}
+.display {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button:hover {
+    background-color: #1b7ceb;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.button:active {
+    background-color: #d31414;
+    transition: background-color 0.1s ease-in-out;
+}

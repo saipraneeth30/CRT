@@ -1,0 +1,31 @@
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f80606;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 20px;
+    padding: 10px;
+}
+h1 {
+    color: #0f6edb;
+    font-size: 300px;
+    text-decoration: solid #f16767 10px;
+    text-transform: unset;
+
+}
+div{
+    background-image: url(https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg);
+    border: 2px solid #1055bd;
+    padding: 1000px;
+    margin: 10px;
+    border-radius: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}

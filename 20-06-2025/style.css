@@ -1,0 +1,23 @@
+h1,p{
+    font-family: Arial, sans-serif;
+    color: #ff0909;
+}
+.A{
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+.A:hover{
+    background-color: #d80000;
+}
+.A:active{
+    background-color: #661d1d;
+}
+.A:visited{
+    color: #0fca28;
+}
+.A:link{
+    color: #a11313;
+}
+.A:focus{
+    outline: 2px solid #392abb;
+}

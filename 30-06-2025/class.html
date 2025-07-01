@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container2 {
+        background-color: lightblue;
+        padding: 20px;
+        border: 1px solid blue;
+    }
+</style>
+<body>
+    <div class="container2">
+        <h1>Heading 2</h1>
+        <p>Paragraph 2</p>
+    </div>
+    <button onclick="f()">Click me</button>
+    <script>
+        function f() {
+            const c = document.querySelectorAll('.container2');
+            c.forEach(element => {
+                element.setAttribute('class', 'container3');
+            });
+        }
+    </script>
+</body>
+</html>

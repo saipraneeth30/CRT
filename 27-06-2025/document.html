@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #49cf13;
+            color: #ffffff;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Document</h1>
+    <p>This is a sample document created on June 27, 2025.</p>
+    <p>Feel free to add more content here.</p>
+    <button onclick="g()" >Click Me!</button>
+    <script>
+        function f() {
+        console.log("Document loaded successfully on June 27, 2025.");
+        document.getElementsByTagName("h1")[0].style.color = "green";
+        document.getElementsByTagName("p")[0].style.fontSize = "50px";
+        setInterval(() => {
+        if (document.body.style.backgroundColor === 'gray') {
+            document.body.style.backgroundColor = 'lightgreen';
+        } else if (document.body.style.backgroundColor === 'lightgreen') {
+        document.body.style.backgroundColor = 'lightyellow';
+        } else if (document.body.style.backgroundColor === 'lightyellow') {
+            document.body.style.backgroundColor = 'white';
+        } else {
+            document.body.style.backgroundColor = 'gray';
+        }
+        }, 100);
+}
+function g() {
+    let a = ['red', 'green', 'blue', 'yellow', 'purple'];
+    let i = 0;
+    setInterval(() => {
+        document.body.style.backgroundColor = a[i];
+        (i + 1) % a.length;
+    }, 1000);
+}
+    </script>
+</body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Div with Button</title>
+  <style>
+    #myDiv {
+      width: 200px;
+      height: 200px;
+      background-color: lightskyblue;
+      border: 2px solid blue;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    #myDiv p {
+      margin: auto;
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="showDiv()">Click to Show Div</button>
+
+  <div id="myDiv">
+    <p>Hello, I appeared!</p>
+  </div>
+
+  <script>
+    function showDiv() {
+      document.getElementById("myDiv").style.display = "flex";
+    }
+  </script>
+
+</body>
+</html>

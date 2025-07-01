@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #b97a7a6e;
+        }
+        .loder {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background-color: transparent;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 10px;
+            border-bottom-color: red;
+            border-left-color: green;
+            border-right-color: yellow;
+            border-top-color: blue;
+            animation: spin 1s infinite ;
+        }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+                
+            }
+        .text {
+            position: absolute;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="loder"></div>
+            <div class="text">Loading...!</div>
+        
+    </body>
+</html>

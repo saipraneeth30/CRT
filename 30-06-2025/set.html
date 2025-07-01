@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Set Example</title>
+        </style>
+    </head>
+    <body>
+        <a href="https://www.google.com">link</a>
+        <button onclick="f()">Click me</button>
+        <script>
+            function f() {
+                let a = document.getElementsByTagName('a');
+                a[0].setattribute('href', 'https://www.amazon.com');
+            }
+            function f() {
+                const c = document.qureySelectorAll('.container2');
+                c.forEach(element => {
+                    element.setattribute('class','container2');
+                });
+            }
+        </script>
+</html>

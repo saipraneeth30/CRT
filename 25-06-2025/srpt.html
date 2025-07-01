@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRPT</title>
+    
+    </head>
+<body>
+    <input type="text" id="input1" placeholder="Enter a number">
+    <input type="text" id="input2" placeholder="Enter another number">
+    <button id="calculate">Calculate</button>
+    <div id="result">
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const input1 = document.getElementById("input1");
+            const input2 = document.getElementById("input2");
+            const calculateButton = document.getElementById("calculate");
+            calculateButton.addEventListener("click", function() {
+                const num1 = parseFloat(input1.value);
+                const num2 = parseFloat(input2.value);
+                
+                if (isNaN(num1) || isNaN(num2)) {
+                    result.textContent = "Please enter valid numbers.";
+                } else {
+                    const sum = num1 + num2;
+                    result.textContent = `The sum is: ${sum}`;
+                }
+            const result = document.getElementById("result");
+        });
+    </script>
+        <p id="output"></p>
+    </div>
+</body>
