@@ -26,4 +26,4 @@ getData(101)
      })
      .catch((error)=>{
         console.error("error occurred:",error);
-     });
+     });    
