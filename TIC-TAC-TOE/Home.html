@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Tic Tac Toe</title>
+</head>
+<body>
+
+<h2>Tic Tac Toe</h2>
+<table border="1" cellspacing="0" cellpadding="20">
+  <tr>
+    <td onclick="play(this)"></td>
+    <td onclick="play(this)"></td>
+    <td onclick="play(this)"></td>
+  </tr>
+  <tr>
+    <td onclick="play(this)"></td>
+    <td onclick="play(this)"></td>
+    <td onclick="play(this)"></td>
+  </tr>
+  <tr>
+    <td onclick="play(this)"></td>
+    <td onclick="play(this)"></td>
+    <td onclick="play(this)"></td>
+  </tr>
+</table>
+
+<h3 id="result"></h3>
+<button onclick="reset()">Reset Game</button>
+
+<script>
+  let currentPlayer = "X";
+
+  function play(cell) {
+    if (cell.innerHTML === "" && !checkWinner()) {
+      cell.innerHTML = currentPlayer;
+      if (checkWinner()) {
+        document.getElementById("result").innerText = currentPlayer + " wins!";
+      } else {
+        currentPlayer = currentPlayer === "X" ? "O" : "X";
+      }
+    }
+  }
+
+  function checkWinner() {
+    const cells = document.getElementsByTagName("td");
+    const winPatterns = [
+      [0,1,2], [3,4,5], [6,7,8], // rows
+      [0,3,6], [1,4,7], [2,5,8], // columns
+      [0,4,8], [2,4,6]           // diagonals
+    ];
+
+    return winPatterns.some(pattern => {
+      const [a, b, c] = pattern;
+      return cells[a].innerHTML &&
+             cells[a].innerHTML === cells[b].innerHTML &&
+             cells[a].innerHTML === cells[c].innerHTML;
+    });
+  }
+
+  function reset() {
+    const cells = document.getElementsByTagName("td");
+    for (let cell of cells) {
+      cell.innerHTML = "";
+    }
+    currentPlayer = "X";
+    document.getElementById("result").innerText = "";
+  }
+</script>
+
+</body>
+</html>

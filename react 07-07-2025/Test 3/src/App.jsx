@@ -2,18 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Comp from './assets/component.jsx'
+import Comp1 from './Components/Comp1.jsx'
+import Maps from './Components/maps.jsx'
+import Memo from './Components/memo.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <p>
-        Hello sai
-      </p>
-      <p> This is second paragraph</p>
-      <Comp></Comp>
+    <Comp1></Comp1> 
+    <Maps></Maps>
+    <Memo></Memo>
     </>
   )
 }
