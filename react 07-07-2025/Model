@@ -1,0 +1,19 @@
+# Model:
+
+Model is going to cast as the interface of your data. It is responsible for maintaining data. It is the logical sata structure behind
+the entire application and is represented by a database  (generally related database such as Mysql, postgres).
+
+# View:
+
+-> Views act as a link between the model data and the templetes.
+-> It contains python logics which required to web app.
+-> This view also sends response to the user when the application is used, to understand briefly, we can say that this view.py can deal with HttpResponse.
+
+# Template:
+
+A template consists of static parts of the desired HTML output as well as some special syntax describing how dynamic contact will be inserted.
+
+Contains:
+HTML
+CSS
+Bootstrap, Javascript.

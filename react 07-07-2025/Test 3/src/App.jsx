@@ -5,14 +5,14 @@ import './App.css'
 import Comp1 from './Components/Comp1.jsx'
 import Maps from './Components/maps.jsx'
 import Memo from './Components/memo.jsx'
+import Change from './Components/Change.jsx'
+import ContactForm from './Components/Forms.jsx'
 
 function App() {
 
   return (
     <>
-    <Comp1></Comp1> 
-    <Maps></Maps>
-    <Memo></Memo>
+    <ContactForm></ContactForm>
     </>
   )
 }
